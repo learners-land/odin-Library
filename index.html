@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/odin_library.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="title">Odin Library</h1>
+        <p>Some description about the project</p>
+    </div>
+
+    <div class="inputs">
+        <label for="book-name">Book name</label>
+        <input type="text" name="book-name" id="book-name">
+        <label for="book-author">Book author</label>
+        <input type="text" name="book-author" id="book-author">
+        <label for="book-pages">Book pages</label>
+        <input type="number" name="book-pages" id="book-pages">
+        <label for="book-read">Book read</label>
+        <input type="checkbox" name="book-read" id="book-read">
+        <button type="submit" name="submit-btn">Submit</button>
+    </div>
+
+    <div class="books">
+        <table id="books-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody id="books-tbody">
+                <tr>
+                    <td data-title="Title">The Hobbit</td>
+                    <td data-title="Author">JRR Tolkein</td>
+                    <td data-title="Pages">69</td>
+                    <td data-title="Status"> <input type="checkbox" name="book-read" id="book-read"></td>
+                    <td data-title="Delete"> <button>DELETE</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
